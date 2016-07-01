@@ -38,8 +38,11 @@
     <TargetPlatform Include="WindowsPhoneApp, Version=8.1" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entities\City.cs" />
     <Compile Include="Messages\Client.cs" />
     <Compile Include="Messages\Request.cs" />
+    <Compile Include="Messages\RequestType.cs" />
+    <Compile Include="Messages\Response.cs" />
     <Compile Include="Models\AddressModel.cs" />
     <Compile Include="Models\Model.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

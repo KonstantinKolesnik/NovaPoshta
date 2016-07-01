@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NovaPoshta.API.Models;
+using System;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
 using Windows.UI.Xaml;
@@ -35,7 +36,7 @@ namespace NovaPoshta
         /// search results, and so forth.
         /// </summary>
         /// <param name="e">Details about the launch request and process.</param>
-        protected override void OnLaunched(LaunchActivatedEventArgs e)
+        protected override async void OnLaunched(LaunchActivatedEventArgs e)
         {
 #if DEBUG
             if (System.Diagnostics.Debugger.IsAttached)
@@ -93,6 +94,13 @@ namespace NovaPoshta
 
             // Ensure the current window is active
             Window.Current.Activate();
+
+
+
+
+            AddressModel model = new AddressModel();
+            var a = await model.GetCitiesAsync();
+            var b = a;
         }
 
 #if WINDOWS_PHONE_APP

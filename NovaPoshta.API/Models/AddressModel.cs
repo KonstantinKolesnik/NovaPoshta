@@ -1,4 +1,7 @@
-﻿using NovaPoshta.API.Messages;
+﻿using NovaPoshta.API.Entities;
+using NovaPoshta.API.Messages;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace NovaPoshta.API.Models
 {
@@ -9,14 +12,26 @@ namespace NovaPoshta.API.Models
             get { return "Address"; }
         }
 
-        public Request GetCities()
+        public async Task<List<City>> GetCitiesAsync(string searchString = null)
         {
-            return new Request()
+            var request = new Request()
             {
                 modelName = ModelName,
                 calledMethod = "getCities"
 
+
+                //                "methodProperties": {
+                //                "FindByString": "Бровари"
+                //}
             };
+
+            return await Client.RequestAsync<City>(request);
         }
+
+
+
+
+
+
     }
 }
