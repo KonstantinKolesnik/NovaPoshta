@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NovaPoshta.Windows", "NovaP
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NovaPoshta.WindowsPhone", "NovaPoshta\NovaPoshta.WindowsPhone\NovaPoshta.WindowsPhone.csproj", "{84F73E64-403D-4F41-AEDE-DD27D3888A35}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NovaPoshta.API", "..\NovaPoshta.API\NovaPoshta.API.csproj", "{278BC06F-E3AE-4C11-8453-ADA677556F6B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NovaPoshta.API", "NovaPoshta.API\NovaPoshta.API.csproj", "{278BC06F-E3AE-4C11-8453-ADA677556F6B}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
